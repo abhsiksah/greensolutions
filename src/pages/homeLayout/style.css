@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.home-hero-container-right {
+  background-color: #f1f1f18c;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.home-hero-container-right-top {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  backdrop-filter: blur(0.1px);
+  /* box-shadow: 1px 1px 10px 1px black; */
+}
+
+.home-hero-container-right-bottom {
+  width: 100%;
+}
+
+.welcome-msg-container {
+  margin-left: 15px;
+  width: 90%;
+}
+
+.table-stats-container {
+  width: 90%;
+  box-shadow: 2px 2px 100px 2px black;
+  border-radius: 10px;
+}

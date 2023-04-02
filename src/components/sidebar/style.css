@@ -1,0 +1,50 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+}
+.sidebar-container-items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.1s ease-in all;
+  padding: 12px;
+  width: 92%;
+}
+
+.active-sidebar {
+  background: linear-gradient(
+    to right,
+    brown 3%,
+    rgb(232, 216, 216) 3%
+  ) !important;
+  color: brown !important;
+}
+
+.sidebar-container-items:hover {
+  background: linear-gradient(to right, brown 3%, rgb(232, 216, 216) 3%);
+  color: brown;
+}
+.sidebar-container-items:active {
+  transform: scale(0.98);
+}
+
+.fam-doc-logo {
+  height: 38px;
+  width: 265px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

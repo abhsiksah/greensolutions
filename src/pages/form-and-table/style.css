@@ -1,0 +1,12 @@
+.button-delete-modal-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.delete-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,52 @@
+.fee-management-add-container {
+  width: 50%;
+  position: relative;
+  left: 2.5rem;
+  padding: 2rem;
+}
+.add-fee-main-header {
+  margin-bottom: 3rem;
+}
+.add-fee-header {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+}
+
+.flat-fee-header {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+}
+
+.fee-management-add-footer {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.add-more-container {
+  margin-top: 2rem;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.add-more-button {
+  display: flex;
+  justify-content: end;
+}
+
+.remove-add-more-item {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  padding-bottom: 1rem;
+  color: brown;
+}
+
+.multiselect-conatiner {
+  width: 400px;
+}
