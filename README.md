@@ -1,1 +1,1 @@
-### Privare
+### Private
