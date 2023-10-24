@@ -7,11 +7,13 @@ import { useLocation } from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import AssignmentIcon from "@mui/icons-material/Assignment";
-
+import PollIcon from '@mui/icons-material/Poll';
 import MenuIcon from "@mui/icons-material/Menu";
+import InsightsIcon from '@mui/icons-material/Insights';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import "./style.css";
+
+
 
 const drawerWidth = 250;
 
@@ -62,6 +64,8 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
+
+
 const Sidebar = () => {
   const state = useSelector((state) => state);
   const navigate = useNavigate();
@@ -88,7 +92,7 @@ const Sidebar = () => {
               ...(open && { display: "none" }),
             }}
           >
-            <MenuIcon style={{ color: "brown" }} />
+            <MenuIcon style={{ color: "white" }} />
           </IconButton>
 
           <IconButton
@@ -97,6 +101,7 @@ const Sidebar = () => {
           >
             <ChevronLeftIcon
               sx={{
+                color:"white",
                 ...(!open && { display: "none" }),
               }}
             />
@@ -111,33 +116,78 @@ const Sidebar = () => {
         <div className="sidebar-container">
           <div
             onClick={() => {
-              navigate("./table");
+              navigate("./Analytics");
             }}
             className={
-              pathname.split("/").includes("clinicManagement")
+              pathname.split("/").includes("Analytics")
                 ? "sidebar-container-items active-sidebar"
                 : "sidebar-container-items"
             }
           >
             <span style={{ marginLeft: !open && "1rem" }}>
-              <PermIdentityIcon />
+              <InsightsIcon />
             </span>
-            <span style={{ display: !open && "none" }}>Table</span>
+            <span style={{ display: !open && "none" }}>Analytics</span>
           </div>{" "}
           <div
             onClick={() => {
-              navigate("./form");
+              navigate("./POT");
             }}
             className={
-              pathname.split("/").includes("clinicManagement")
+              pathname.split("/").includes("POT")
                 ? "sidebar-container-items active-sidebar"
                 : "sidebar-container-items"
             }
           >
             <span style={{ marginLeft: !open && "1rem" }}>
-              <AssignmentIcon />
+              <PollIcon />
             </span>
-            <span style={{ display: !open && "none" }}>Form</span>
+            <span style={{ display: !open && "none" }}>Production Over Time</span>
+          </div>
+          <div
+            onClick={() => {
+              navigate("./TEG");
+            }}
+            className={
+              pathname.split("/").includes("TEG")
+                ? "sidebar-container-items active-sidebar"
+                : "sidebar-container-items"
+            }
+          >
+            <span style={{ marginLeft: !open && "1rem" }}>
+              <PollIcon />
+            </span>
+            <span style={{ display: !open && "none" }}>Total Electricity Generation</span>
+          </div>
+          <div
+            onClick={() => {
+              navigate("./NEP");
+            }}
+            className={
+              pathname.split("/").includes("NEP")
+                ? "sidebar-container-items active-sidebar"
+                : "sidebar-container-items"
+            }
+          >
+            <span style={{ marginLeft: !open && "1rem" }}>
+              <PollIcon />
+            </span>
+            <span style={{ display: !open && "none" }}>Net Electricity Period</span>
+          </div>
+          <div
+            onClick={() => {
+              navigate("./ECONSUM");
+            }}
+            className={
+              pathname.split("/").includes("ECONSUM")
+                ? "sidebar-container-items active-sidebar"
+                : "sidebar-container-items"
+            }
+          >
+            <span style={{ marginLeft: !open && "1rem" }}>
+              <PollIcon />
+            </span>
+            <span style={{ display: !open && "none" }}>Electricity Consumption</span>
           </div>
         </div>
       </Drawer>

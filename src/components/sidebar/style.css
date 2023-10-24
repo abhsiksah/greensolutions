@@ -4,6 +4,7 @@
   align-items: center;
   padding-top: 30px;
   width: 100%;
+  gap: 10px;
 }
 .sidebar-container-items {
   display: flex;
@@ -14,6 +15,7 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 24px;
+  color: white !important;
   white-space: nowrap;
   cursor: pointer;
   transition: 0.1s ease-in all;
@@ -24,15 +26,20 @@
 .active-sidebar {
   background: linear-gradient(
     to right,
-    brown 3%,
-    rgb(232, 216, 216) 3%
+    #e14eca 3%,
+    rgba(194, 184, 205, 0.334) 3%
   ) !important;
-  color: brown !important;
+  color: white !important;
 }
 
 .sidebar-container-items:hover {
-  background: linear-gradient(to right, brown 3%, rgb(232, 216, 216) 3%);
-  color: brown;
+  color: white;
+  background: linear-gradient(
+    to right,
+    #e14eca 3%,
+    rgba(194, 184, 205, 0.334) 3%
+  ) !important;
+
 }
 .sidebar-container-items:active {
   transform: scale(0.98);
@@ -47,4 +54,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  background: linear-gradient(0deg, #27293d 0%, #1a1b2b 100%);;
 }

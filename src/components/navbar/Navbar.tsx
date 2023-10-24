@@ -1,5 +1,4 @@
-import { Avatar, Box, Stack, Typography } from "@mui/material";
-import { alpha } from "@mui/material/styles";
+import { Avatar, Box, Stack, TextField, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 
 const TOP_NAV_HEIGHT = 64;
@@ -9,17 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Box
-        component="header"
-        sx={{
-          backdropFilter: "blur(6px)",
-          backgroundColor: (theme) =>
-            alpha(theme.palette.background.default, 0.8),
-          position: "sticky",
-          top: 0,
-          zIndex: (theme) => theme.zIndex.appBar,
-        }}
-      >
+      <Box component="header" sx={{}}>
         <Stack
           alignItems="center"
           direction="row"
@@ -30,10 +19,26 @@ const Navbar = () => {
             px: 2,
           }}
         >
-          <Stack alignItems="center" direction="row" spacing={2}></Stack>
           <Stack alignItems="center" direction="row" spacing={2}>
-            <Typography variant="h6">
-              {state.globalAppState?.userInfo?.Role === "2" ? "Admin" : "User"}
+            {/* <TextField
+              label="Search"
+              variant="standard"
+              focused
+              inputProps={{
+                style: {
+                  color: "white",
+                },
+              }}
+            /> */}
+          </Stack>
+          <Stack alignItems="center" direction="row" spacing={3}>
+            <Typography
+              variant="h6"
+              sx={{ fontFamily: "cursive", fontSize: "15px" }}
+            >
+              {state.globalAppState?.userInfo?.Role === "2"
+                ? "Hello Etti Khanna"
+                : "Hello Etti Khanna"}
             </Typography>
 
             <Avatar
@@ -42,9 +47,9 @@ const Navbar = () => {
                 height: 40,
                 width: 40,
               }}
-              src="/assets/avatars/avatar-anika-visser.png"
+              src={"https://picsum.photos/200/300"}
             >
-              A
+              GD
             </Avatar>
           </Stack>
         </Stack>

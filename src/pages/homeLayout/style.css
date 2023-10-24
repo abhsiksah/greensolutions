@@ -4,7 +4,8 @@
 }
 
 .home-hero-container-right {
-  background-color: #f1f1f18c;
+  background: linear-gradient(#1e1e2f, #1e1e24);
+
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -35,4 +36,10 @@
   width: 90%;
   box-shadow: 2px 2px 100px 2px black;
   border-radius: 10px;
+}
+
+
+
+.home-hero-container-left{
+  
 }
