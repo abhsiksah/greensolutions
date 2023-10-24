@@ -16,7 +16,7 @@ const Navbar = () => {
           spacing={2}
           sx={{
             minHeight: TOP_NAV_HEIGHT,
-            px: 2,
+            px: 3,
           }}
         >
           <Stack alignItems="center" direction="row" spacing={2}>
